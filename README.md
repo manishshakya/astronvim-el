@@ -50,10 +50,15 @@ git clone https://github.com/manishshakya/astronvim-el.git ~/.config/astronvim-e
 
 - **Start the editor with `NVIM_APPNAME` environment variable set to `astronvim`**
 
+
 ```
 NVIM_APPNAME=astronvim-el nvim
 ```
 ## Tips
 - Generate compile_commands.json file for kernel
-  
+```
+make defconfig
+make
+scripts/clang-tools/gen_compile_commands.py
+```
   See https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b30204640192234d18f9168f19f9cd693485b86d
