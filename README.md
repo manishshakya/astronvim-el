@@ -62,3 +62,10 @@ make
 scripts/clang-tools/gen_compile_commands.py
 ```
   See https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b30204640192234d18f9168f19f9cd693485b86d
+
+- Generate compile_commands.json file for u-boot
+```
+make defconfig
+make
+scripts/gen_compile_commands.py
+```
