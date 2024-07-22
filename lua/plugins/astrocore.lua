@@ -13,7 +13,7 @@ return {
       large_buf = { size = 1024 * 500, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
-      diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
+      diagnostics_mode = 0, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
       notifications = true, -- enable notifications at start
     },
@@ -34,9 +34,10 @@ return {
         wrap = true, -- sets wrap lines
         conceallevel = 0, -- disable conceal
         linebreak = true, -- linebreak soft wrap at words
-        list = true, -- show whitespace characters
+        list = false, -- show whitespace characters
         showbreak = "﬌ ",
         listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
+        cmdheight = 1,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
