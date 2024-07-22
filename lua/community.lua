@@ -20,4 +20,11 @@ return {
       bg_color = "#a8b0d5",
     },
   },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.json" },
 }
