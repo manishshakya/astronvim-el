@@ -13,7 +13,7 @@ return {
         "html",
         "marksman",
         "jsonls",
-        "basedpyright",
+        --"basedpyright",
         "rust_analyzer",
         "sqlls",
         "lua_ls",
