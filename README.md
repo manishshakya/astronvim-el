@@ -53,3 +53,7 @@ git clone https://github.com/manishshakya/astronvim-el.git ~/.config/astronvim-e
 ```
 NVIM_APPNAME=astronvim-el nvim
 ```
+## Tips
+- Generate compile_commands.json file for kernel
+  
+  See https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b30204640192234d18f9168f19f9cd693485b86d
