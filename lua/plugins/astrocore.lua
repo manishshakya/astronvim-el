@@ -34,7 +34,7 @@ return {
         wrap = true, -- sets wrap lines
         conceallevel = 0, -- disable conceal
         linebreak = true, -- linebreak soft wrap at words
-        list = false, -- show whitespace characters
+        list = true, -- show whitespace characters
         showbreak = "﬌ ",
         listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
         cmdheight = 1,
@@ -84,10 +84,14 @@ return {
 
         -- view treesitter highlight groups
         ["<Space>k"] = { ":Inspect<cr>", desc = "View Highlight Group" },
-
         -- search highlight groups
         ["<Space>sg"] = { ":Telescope highlights<cr>", desc = "Highlight groups" },
 
+        -- search git files groups
+        ["<Leader>fl"] = { ":Telescope live_grep<cr>", desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore." },
+
+        -- search git files groups
+        ["<Leader>fg"] = { ":Telescope git_files<cr>", desc = "Fuzzy search through the output of git ls-files command, respects .gitignore" },
         -- easy splits
         ["\\"] = { ":split<cr>", desc = "Horizontal split" },
         ["|"] = { ":vsplit<cr>", desc = "Vertical split" },
