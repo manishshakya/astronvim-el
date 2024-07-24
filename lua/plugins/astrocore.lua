@@ -92,6 +92,15 @@ return {
 
         -- search git files groups
         ["<Leader>fg"] = { ":Telescope git_files<cr>", desc = "Fuzzy search through the output of git ls-files command, respects .gitignore" },
+      
+        ["<Leader>fs"] = {
+          function()
+            require("telescope.builtin").live_grep( {
+            glob_pattern="[a-zA-Z0-9]*.{c,h,cpp,rs}"
+            })
+          end,
+          desc = "Grep in source file",
+        },
         -- easy splits
         ["\\"] = { ":split<cr>", desc = "Horizontal split" },
         ["|"] = { ":vsplit<cr>", desc = "Vertical split" },
