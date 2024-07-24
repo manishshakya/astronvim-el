@@ -27,4 +27,5 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
 }
