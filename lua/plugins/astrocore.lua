@@ -34,10 +34,11 @@ return {
         wrap = true, -- sets wrap lines
         conceallevel = 0, -- disable conceal
         linebreak = true, -- linebreak soft wrap at words
-        list = true, -- show whitespace characters
+        list = false, -- show whitespace characters
         showbreak = "﬌ ",
         listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
         cmdheight = 1,
+        wildmenu = true,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
