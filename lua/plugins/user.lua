@@ -35,6 +35,14 @@ return {
       max_width = 70,
     },
   },
+  {
+    "zk-org/zk-nvim",
+    config = function()
+      require("zk").setup({
+        picker = "telescope",
+      })
+    end
+  },
 
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = false },
