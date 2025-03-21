@@ -106,6 +106,7 @@ return {
         ["|"] = { ":vsplit<cr>", desc = "Vertical split" },
         -- indentation toggle
         ["<Leader>it"] = { ":IBLToggle<cr>", desc = "Toggle blank link indicator" },
+        ["<Leader>ue"] = { ":hi @lsp.type.comment guifg=inherit<cr>", desc = "Reset #ifdef macro" },
         ["<Leader>dt"] = {
           function()
             vim.diagnostic.enable(not vim.diagnostic.is_enabled())
